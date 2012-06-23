@@ -11,10 +11,10 @@ def binary_insert(new_float,some_list_of_floats):
     lower=0
     upper=length-1
     insert=False
-    if new_float<some_list_of_floats[lower]:
+    if new_float<=some_list_of_floats[lower]:
         some_list_of_floats.insert(lower,new_float)
         insert=True
-    if new_float>some_list_of_floats[upper]:
+    if new_float>=some_list_of_floats[upper]:
         some_list_of_floats.insert(upper+1,new_float)
         insert=True
     #modifies the input list to include the new_float
